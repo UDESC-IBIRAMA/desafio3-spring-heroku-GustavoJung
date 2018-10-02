@@ -22,7 +22,7 @@ import model.Veiculo;
 
 /**
  *
- * @author lucia
+ * @author mrcar
  */
 @Path("model.montadora")
 public class MontadoraFacadeREST extends AbstractFacade<Montadora> {

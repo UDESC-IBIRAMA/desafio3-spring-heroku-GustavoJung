@@ -12,7 +12,7 @@ import model.Veiculo;
 
 /**
  *
- * @author lucia
+ * @author mrcar
  */
 public abstract class AbstractFacade<T> {
 

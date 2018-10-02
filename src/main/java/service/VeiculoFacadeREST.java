@@ -21,7 +21,7 @@ import model.Veiculo;
 
 /**
  *
- * @author lucia
+ * @author mrcar
  */
 
 @Path("model.veiculo")
