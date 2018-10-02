@@ -1,7 +1,7 @@
 
 import java.util.List;
 import java.util.Optional;
-import model.Produto;
+import model.Veiculo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,24 +23,24 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@RequestMapping("/produtos")
+@RequestMapping("/veiculos")
 public class ProdutosResource {
     
     @Autowired
     private ProdutosRepositorio produtos;
     
     @GetMapping("{id}")
-    public Optional<Produto> buscar(@PathVariable Long id){
+    public Optional<Veiculo> buscar(@PathVariable Long id){
         return produtos.findById(id);
     }
     
     @GetMapping
-    public List<Produto>pesquisar(){
+    public List<Veiculo>pesquisar(){
         return produtos.findAll();
     }
     
     @PostMapping
-    public Produto salvar(@RequestBody Produto produto){
+    public Veiculo salvar(@RequestBody Veiculo produto){
         return produtos.save(produto);
     }
     

@@ -1,5 +1,5 @@
 
-import model.Produto;
+import model.Veiculo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /*
@@ -12,6 +12,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * @author mrcar
  */
-public interface ProdutosRepositorio extends JpaRepository<Produto,Long> {
+public interface ProdutosRepositorio extends JpaRepository<Veiculo,Long> {
     
 }
